@@ -1,23 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Spartan&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS Files -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-
-    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Chex | Detallado Automotriz</title>
   </head>
   <body>
     <header>
-      
+      <div class="header-top">
+        <div class="header-top__container">
+          <div class="header-top__item">
+            <img src="img/location-svg.svg" alt="Ícono de ubicación">
+            <p><span>Ubicación: </span> <a target="_blank" href="https://www.google.com/maps/place/Centro+De+Detallado+Automotriz+Chex+Detailer/@21.8695235,-102.3254847,21z/data=!4m5!3m4!1s0x8429eea0420a6757:0xc93eeba71cf8ad7!8m2!3d21.8695235!4d-102.3253479">
+              Boulevard Juan Pablo II 1003A
+              Aguascalientes City 20218</a></p>
+          </div>  
+          <div class="header-top__item d-none d-lg-flex">
+            <img src="img/schedule-svg.svg" alt="Ícono de horario">
+            <p><span>Horarios: </span> Lun-Mar: 10:00 am - 06:00 pm. Mié: Cerrado Jue-Sáb: 10:00 am - 06:00 pm. Dom: 10:00 am - 4:30 pm</p>           
+          </div>
+          <div class="header-top__item">
+            <img src="img/phone-svg.svg" alt="Ícono de teléfono">
+            <p><span>Teléfono: </span><a href="tel:4492412077">449 241 2077</a></p>
+          </div>       
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              class="logo horizontal-logo"
+              src="img/Logo.png"
+              alt="Logo de Chex"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">cotizar</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link nav-link--green dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown2"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                performance
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                 <div class="container">
+                  <div class="row ">
+                    <div class="col-5">
+                      <img src="img/gt-tuning.png" alt="GT Tuning Logo" class="img-fluid">
+                    </div>
+                    <div class="col-7">
+                      <div class="dropdown-body">
+                        <a class="dropdown-item" href="./index.html">
+                          Casos de éxito
+                        </a>
+                        <a class="dropdown-item" href="./enterprise.html">
+                          Portafolio
+                        </a>
+                        <a class="dropdown-item" href="./service.html">
+                          Reseñas
+                        </a>                                                 
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contacto</a>
+              </li>              
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main></main>
-
+    <main>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center" style="z-index: 2;">
+              <div class="jumbotron__content">
+                <div class="title">
+                  <span>Tu detailer de </span>                 
+                </div>
+                <div class="title">
+                  <span>elección</span>
+                </div>
+                <p class="fade-down">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis</p>
+              </div>
+              <a class="btn btn--dark-red fade-down" href="#">cotizar</a>
+            </div>
+            <div class="col-12 d-none d-lg-block col-lg-6">
+              <aside>
+                <img class="img-fluid jumbotron--img" src="img/LaFerrari.jpg" alt="LaFerrari">
+              </aside>
+            </div>
+          </div>         
+        </div>
+      </div>
+    </main>
+    <!-- Bootstrap JS Files -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -33,5 +147,10 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <!-- GSAP JS -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+    <!-- Custom JS File -->
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,23 @@
+.btn{
+  display: inline-block;
+  &--dark-red{
+    background-color: $dark-red;
+    border-radius: 0;
+    color: #fff;
+    font-family: $main-font;
+    letter-spacing: 1.2px;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    transition: background-color .3s;
+    width: 60%;
+    @include respond('desktop'){
+      padding: 1rem 2.5rem;
+      width: 30%;
+
+    }
+    &:hover{
+      background-color: darken($dark-red, 4%);
+      color: #fff;
+    }
+  }
+}
