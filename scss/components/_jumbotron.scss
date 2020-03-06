@@ -2,6 +2,7 @@
   background-color: #fff;
   @include respond('desktop'){
     padding: 1rem 0;
+    margin-bottom: 5rem;
   }
   &__content{
     @include respond('desktop'){
