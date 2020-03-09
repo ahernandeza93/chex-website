@@ -1,0 +1,50 @@
+#information {
+
+    background-image: url('../img/bg-why.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .red-line {
+        height: 7px;
+        background-color: #d5001c;
+        width: 340px;
+    }
+
+    p {
+        color: #747f8d ;
+        font-size: 20px;
+    }
+
+    ul {
+        
+        li {
+            list-style: none;
+            color: #0f263a;
+            font-weight: bold;
+            list-style-image: url('../img/check.svg');
+        }
+    }
+}
+.book {
+    background-color: #f8f8f9;
+    height: 120px;
+    h5 {
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+}
+
+.work {
+    h1 {
+        font-size: 32px;
+        color: #0f263a;
+    }
+    p {
+        color: #747f8d;
+    }
+}

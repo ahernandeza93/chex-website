@@ -5,8 +5,25 @@
     .card-header {
     border: none;
     }
-    .card-body {
-        
-    }
+
     
 }
+
+#about {
+    h1 {
+        color: #0f263a;
+    }
+    #accordion {
+        .card {
+            .card-header {
+                a {
+                    color: #0f263a;
+                }
+                .card-body {
+                    color: #747f8d;
+                }
+            }
+        }
+    }
+}
+
