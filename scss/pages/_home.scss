@@ -96,3 +96,14 @@ section.services{
     }
   }
 }
+.offers{
+  margin-bottom: 3rem;
+  h1{
+    font-family: $main-font;
+    font-style: italic;
+    margin-bottom: 2rem;
+    span{
+      font-weight: bold;
+    }
+  }
+}

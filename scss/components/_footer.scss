@@ -1,0 +1,40 @@
+footer{
+  background-color: #191F22;
+  padding-bottom: .5rem;
+  color: #fff;
+  img{
+    height: 122px;
+    width: auto;
+  }
+  p{
+    font-size: .7rem;
+    margin-top: 1rem;
+  }
+  a{
+    color: #fff;
+    &:hover{
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  ul{    
+    text-transform: uppercase;
+    font-family: $main-font;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: .8rem;
+    li{
+      font-family: $secondary-font;
+      text-transform: capitalize;
+      list-style: none;
+      font-size: .8rem;
+      margin-top: 1rem;
+      a{
+        font-family: $secondary-font;
+        color: #fff;
+        text-decoration: none;
+       
+      }
+    }
+  }
+}
