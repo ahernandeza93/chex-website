@@ -1,3 +1,8 @@
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+
 // ---- Navbar dropdown JS
 const $dropdown = $(".dropdown");
 const $dropdownToggle = $(".dropdown-toggle");

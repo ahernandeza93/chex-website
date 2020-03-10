@@ -1,108 +1,169 @@
-section.services{
+section.services {
   position: relative;
-  height: 100vh; 
-  &::after{
+  height: 100vh;
+  &::after {
     background: $light-gray;
-    content: '';
+    content: "";
     position: absolute;
     top: 3rem;
     left: 0;
     width: 100%;
     height: 63%;
     z-index: -1;
-    @include respond('big-desktop'){   
+    @include respond("big-desktop") {
       height: 70%;
     }
   }
-  .services__container{
-   position: absolute;
-   top: 3rem;
-   left: 2rem;
-   @include respond('big-desktop'){   
-     top: 10rem;
+  .services__container {
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    @include respond("big-desktop") {
+      top: 10rem;
+    }
   }
-  }
-  .services__img-container{
-    @include respond('desktop'){      
-    img{
-      position: absolute;     
-      &:nth-of-type(1){
-        width: 400px;
-        left: 7rem;
-        top: 7%;
-        @include respond('big-desktop'){
-          width: 500px;
-          left: 10rem;
+  .services__img-container {
+    @include respond("desktop") {
+      img {
+        position: absolute;
+        &:nth-of-type(1) {
+          width: 400px;
+          left: 7rem;
           top: 7%;
+          @include respond("big-desktop") {
+            width: 500px;
+            left: 10rem;
+            top: 7%;
+          }
         }
-      }
-      &:nth-of-type(2) {
-        width: 400px;
-        left: 10rem;
-        top: -2rem;
-        margin-top: 15%;
-        @include respond('big-desktop'){
-          width: 500px;
-          left: 15rem;
+        &:nth-of-type(2) {
+          width: 400px;
+          left: 10rem;
           top: -2rem;
+          margin-top: 15%;
+          @include respond("big-desktop") {
+            width: 500px;
+            left: 15rem;
+            top: -2rem;
+          }
         }
       }
-    }
     }
   }
-  .card{
+  .card {
     border: none;
     background: $light-gray;
-    &-body{
-      
+    &-body {
     }
-    &-img-top{
+    &-img-top {
       align-self: center;
       width: 61px;
       height: 61px;
     }
-    &-title{
+    &-title {
       font-family: $main-font;
       font-size: 1.1rem;
     }
-    &-text{
-      font-size: .9rem;
+    &-text {
+      font-size: 0.9rem;
       color: $dark-gray;
     }
   }
 }
-.services--quote{
+#information {
+  background-image: url("../img/bg-why.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+
+  h1 {
+    font-size: 3.5rem;
+    font-family: $main-font;
+  }
+
+  .red-line {
+    height: 7px;
+    background-color: #d5001c;
+    width: 340px;
+  }
+
+  p {
+    color: #747f8d;
+    font-size: 1.1rem;
+  }
+
+  ul {
+    li {
+      list-style: none;
+      color: #0f263a;
+      font-weight: bold;
+      list-style-image: url("../img/check.svg");
+    }
+  }
+}
+.book {
+  background-color: #f8f8f9;
+  height: 120px;
+  h3, h5{
+    font-family: $main-font;
+    margin-bottom: 0;
+  }
+  h3{ 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;  
+  }
+  .italic{
+    font-style: italic;
+  }  
+  h5 {
+    font-size: 17px;    
+  }
+}
+
+.work {
+  h2 {
+    font-size: 32px;
+    color: #0f263a;
+    font-family: $main-font;
+  }
+  p {
+    color: #747f8d;
+    font-size: .9rem;
+  }
+}
+.services--quote {
   margin-top: -20rem;
   margin-bottom: 2rem;
-  .card{
-    background: #FFFFFF;
-    box-shadow: 0 0 9px 0 rgba(0,0,0,0.09);
+  .card {
+    background: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.09);
     border: none;
     max-height: 190px;
-    img{
+    img {
       width: 20%;
     }
-    &-body{
+    &-body {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
     }
-    &-title{
+    &-title {
       font-family: $main-font;
     }
-    &-text{
+    &-text {
       color: $dark-gray;
     }
   }
 }
-.offers{
-  margin-bottom: 3rem;
-  h1{
+.offers {
+  margin: 3rem 0;
+  h1 {
     font-family: $main-font;
     font-style: italic;
     margin-bottom: 2rem;
-    span{
+    span {
       font-weight: bold;
     }
   }

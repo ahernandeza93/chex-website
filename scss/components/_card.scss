@@ -1,0 +1,30 @@
+.card {
+  border: none;
+  .card-header {
+    border: none;
+  }
+}
+
+#q-a {
+  background-color: #f8f8f9;
+  padding: 3rem 0;
+  h2 {
+    color: #0f263a;
+    font-family: $main-font;
+  }
+  #accordion {
+    .card {
+      .card-header {
+        background-color: #f8f8f9;
+        a {
+            color: #0f263a;
+            font-family: $main-font;
+        }              
+      }
+      .card-body {
+        background-color: #f8f8f9;
+        color: #747f8d;
+      }
+    }
+  }
+}
