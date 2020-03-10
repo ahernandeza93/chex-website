@@ -22,20 +22,22 @@
     }
   }
   &--white{
-    background-color: #fff;
-    border-radius: 0;
-    color: #0F263A;
-    font-family: $secondary-font;
-    font-weight: bold;
-    text-transform: capitalize;
-    padding: .7rem 2rem;
-    display: inline-block;
-    margin-top: 2rem;
-    transition: all .3s;
-    &:hover{
+    @include respond('desktop'){
+      background-color: #fff;
+      border-radius: 0;
       color: #0F263A;
-      transform: translateY(-10px);
+      font-family: $secondary-font;
       font-weight: bold;
+      text-transform: capitalize;
+      padding: .7rem 2rem;
+      display: inline-block;
+      margin-top: 2rem;
+      transition: all .3s;
+      &:hover{
+        color: #0F263A;
+        transform: translateY(-10px);
+        font-weight: bold;
+      }
     }
   }
 }

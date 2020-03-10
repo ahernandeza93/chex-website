@@ -98,12 +98,12 @@ nav.navbar{
     }
   }
 }
-@media screen and (min-width: 1200px) {
+@include respond('desktop'){
   .navbar .nav-item:not(:last-child) {
-    margin-right: 35px;
+    margin-right: 25px;
+    
   }
 }
-
 .dropdown-toggle::after {
   transition: transform 0.15s linear;
 }

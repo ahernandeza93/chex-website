@@ -1,6 +1,11 @@
 section.services {
   position: relative;
-  height: 100vh;
+  
+  background: $light-gray;
+  @include respond('desktop'){
+    background: none;
+    height: 100vh;
+  }
   &::after {
     background: $light-gray;
     content: "";
@@ -15,9 +20,12 @@ section.services {
     }
   }
   .services__container {
-    position: absolute;
-    top: 3rem;
-    left: 2rem;
+    @include respond('desktop'){
+      position: absolute;
+      top: 3rem;
+      left: 2rem;
+
+    }
     @include respond("big-desktop") {
       top: 10rem;
     }
@@ -70,21 +78,46 @@ section.services {
     }
   }
 }
+#blog{
+  margin: 2rem 0;
+  a{
+    @include respond('desktop'){
+      margin-left: 2rem;
+      
+    }
+  }
+}
 #information {
   background-image: url("../img/bg-why.jpg");
   background-size: cover;
   background-position: center;
-  height: 700px;
-
-  h1 {
-    font-size: 3.5rem;
+  height: 100%;
+  @include respond('big-desktop'){
+    height: 700px;
+  }
+  p{
+    padding: 3rem 0;
+    margin: 0;
+    @include respond('desktop'){
+      padding: 4rem 0;
+    }
+  }
+  h2 {
+    font-size: 2rem;
     font-family: $main-font;
+    @include respond('big-desktop'){
+      font-size: 3.5rem;
+    }
   }
 
   .red-line {
     height: 7px;
     background-color: #d5001c;
-    width: 340px;
+    width: 200px;
+    @include respond('big-desktop'){
+      width: 340px;
+
+    }
   }
 
   p {
@@ -103,7 +136,21 @@ section.services {
 }
 .book {
   background-color: #f8f8f9;
-  height: 120px;
+  padding: 2rem 0;
+  .col-md-4{
+    &:first-child{
+      margin-top: 0;
+    }
+    margin-top: 2rem;
+    @include respond('desktop'){
+      margin-top: 0;
+    }
+  }
+  @include respond('big-desktop'){
+    padding: 3rem 0;
+    height: 120px;
+
+  }
   h3, h5{
     font-family: $main-font;
     margin-bottom: 0;
@@ -119,6 +166,12 @@ section.services {
   h5 {
     font-size: 17px;    
   }
+  p{
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    font-family: $main-font;
+    font-weight: bold;
+  }
 }
 
 .work {
@@ -130,6 +183,7 @@ section.services {
   p {
     color: #747f8d;
     font-size: .9rem;
+    margin: 1.5rem 0;
   }
 }
 .services--quote {
@@ -159,6 +213,12 @@ section.services {
 }
 .offers {
   margin: 3rem 0;
+  img{
+    margin-top: 1rem;
+    @include respond('desktop'){
+      margin-top: 0;
+    }
+  }
   h1 {
     font-family: $main-font;
     font-style: italic;
