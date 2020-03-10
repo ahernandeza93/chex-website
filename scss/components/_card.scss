@@ -10,18 +10,23 @@
 }
 
 #about {
+    background-color: #f8f8f9;
     h1 {
         color: #0f263a;
     }
     #accordion {
         .card {
             .card-header {
+                background-color: #f8f8f9;
                 a {
                     color: #0f263a;
                 }
-                .card-body {
-                    color: #747f8d;
-                }
+                
+            }
+            .card-body {
+                background-color: #f8f8f9;
+                color: #747f8d;
+
             }
         }
     }
