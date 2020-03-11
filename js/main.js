@@ -63,11 +63,32 @@ if ($(window).width() >= 1024) {
 
   var tl2 = new TimelineMax();
   tl2.from(".information__container", 0.5, { x: -200, opacity: 0 });
+
   const scene2 = new ScrollMagic.Scene({
     triggerElement: ".information",
     triggerHook: "onEnter",
     duration: "90%"
   })
     .setTween(tl2)
+    .addTo(controller);
+
+  var tl3 = new TimelineMax();
+  tl3.from(".offers", 0.5, { y: 200, opacity: 0 });
+  const scene3 = new ScrollMagic.Scene({
+    triggerElement: ".offers",
+    triggerHook: "onEnter",
+    duration: "90%"
+  })
+    .setTween(tl3)
+    .addTo(controller);
+
+  var tl4 = new TimelineMax();
+  tl4.from(".work__logos", 0.5, { x: 200, opacity: 0 });
+  const scene4 = new ScrollMagic.Scene({
+    triggerElement: ".work",
+    triggerHook: "onEnter",
+    duration: "90%"
+  })
+    .setTween(tl4)
     .addTo(controller);
 }
