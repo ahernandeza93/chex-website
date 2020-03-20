@@ -49,17 +49,21 @@ if ($(window).width() >= 1024) {
   const controller = new ScrollMagic.Controller();
 
   var tl = new TimelineMax({ onUpdate: updatePercentage });
-  tl.from(".services-img--1", 1, { x: -200, opacity: 0 });
-  tl.from(".services-img--2", 1, { x: 200, opacity: 0 });
+  tl.from(".services-img--1", 0.8, { x: -200, opacity: 0 });
+  tl.from(".services-img--2", 0.8, { x: 200, opacity: 0 });
   tl.from(".services__container", 0.5, { x: 200, opacity: 0 });
-  const scene = new ScrollMagic.Scene({
-    triggerElement: ".services",
-    triggerHook: "onLeave",
-    duration: "90%"
-  })
-    .setPin(".services")
+  new ScrollMagic.Scene({ triggerElement: ".services" })
+    // .setClassToggle(".image-1", "is-visible") // add class toggle
     .setTween(tl)
     .addTo(controller);
+  // const scene = new ScrollMagic.Scene({
+  //   triggerElement: ".services",
+  //   triggerHook: "onLeave",
+  //   duration: "90%"
+  // })
+  // .setPin(".services")
+  // .setTween(tl)
+  // .addTo(controller);
 
   var tl2 = new TimelineMax();
   tl2.from(".information__container", 0.5, { x: -200, opacity: 0 });
