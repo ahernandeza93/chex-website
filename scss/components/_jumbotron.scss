@@ -15,7 +15,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 0%;
+        width: 0;
         height: 90%;
         background: $light-red;
         animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
@@ -28,7 +28,7 @@
         font-family: $main-font;
         font-size: 3rem;
         @include respond('desktop'){
-          font-size: 4.2rem;
+          font-size: 3.8rem;
         }
       }
     }
