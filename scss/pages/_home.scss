@@ -42,11 +42,15 @@ section.services {
     }
   }
   .services__img-container {
+    img {
+      width: 400px;
+      margin: 1rem auto;
+    }
     @include respond("tab-port") {
       img {
         position: absolute;
         &:nth-of-type(1) {
-          width: 400px;
+          width: 300px;
           left: -1rem;
           top: 7%;
           @include respond("tab-port") {
