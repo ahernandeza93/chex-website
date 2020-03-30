@@ -1,6 +1,6 @@
-.btn{
+.btn {
   display: inline-block;
-  &--dark-red{
+  &--dark-red {
     background-color: $dark-red;
     border-radius: 0;
     color: #fff;
@@ -8,36 +8,35 @@
     letter-spacing: 1.2px;
     padding: 1rem 2rem;
     text-transform: uppercase;
-    transition: background-color .3s;
+    transition: background-color 0.3s;
     width: 60%;
-    @include respond('desktop'){
+    @include respond("tab-port") {
       padding: 1rem 2.5rem;
-      width: 30%;
-
+      max-width: 250px;
     }
-    &:hover{
+    &:hover {
       background-color: darken($dark-red, 4%);
       color: #fff;
       text-decoration: none;
     }
   }
-  &--white{
-    @include respond('desktop'){
-      background-color: #fff;
-      border-radius: 0;
-      color: #0F263A;
-      font-family: $secondary-font;
+  &--white {
+    background-color: #fff;
+    border-radius: 0;
+    color: #0f263a;
+    font-family: $secondary-font;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 0.7rem 2rem;
+    display: inline-block;
+    margin-top: 2rem;
+    transition: all 0.3s;
+    &:hover {
+      color: #0f263a;
+      transform: translateY(-10px);
       font-weight: bold;
-      text-transform: capitalize;
-      padding: .7rem 2rem;
-      display: inline-block;
-      margin-top: 2rem;
-      transition: all .3s;
-      &:hover{
-        color: #0F263A;
-        transform: translateY(-10px);
-        font-weight: bold;
-      }
     }
+    // @include respond("desktop") {
+    // }
   }
 }
