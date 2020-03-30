@@ -1,16 +1,16 @@
-.jumbotron{
+.jumbotron {
   background-color: #fff;
-  @include respond('desktop'){
+  @include respond("desktop") {
     padding: 1rem 0;
     margin-bottom: 5rem;
   }
-  &__content{
-    @include respond('desktop'){
+  &__content {
+    @include respond("desktop") {
       padding-right: 2rem;
     }
     .title {
       position: relative;
-      &:after{
+      &:after {
         content: "";
         position: absolute;
         top: 0;
@@ -21,20 +21,20 @@
         animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
         animation-delay: 1.4s;
       }
-      span{
+      span {
         opacity: 0;
         animation: appear-text 0.0001s linear forwards;
         animation-delay: 2s;
         font-family: $main-font;
         font-size: 3rem;
-        @include respond('desktop'){
-          font-size: 3.8rem;
+        @include respond("desktop") {
+          font-size: 3.3rem;
         }
       }
     }
-    p{
+    p {
       padding: 2.7rem 0;
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 }

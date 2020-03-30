@@ -1,22 +1,22 @@
-@keyframes rev-block{
-  0%{
+@keyframes rev-block {
+  0% {
     left: 0%;
     width: 0%;
   }
-  50%{
+  50% {
     left: 0;
-    width: 85%;
+    width: 100%;
   }
   100% {
     left: 100%;
     width: 0;
   }
 }
-@keyframes appear-text{
-  0%{
+@keyframes appear-text {
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
