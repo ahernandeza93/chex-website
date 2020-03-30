@@ -9,7 +9,7 @@ section.services {
   }
   @include respond("big-desktop") {
     background: none;
-    height: 100vh;
+    height: 90vh;
   }
   &::after {
     background: $light-gray;
@@ -49,6 +49,11 @@ section.services {
           width: 400px;
           left: -1rem;
           top: 7%;
+          @include respond("tab-port") {
+            width: 300px;
+            left: -1rem;
+            top: 7%;
+          }
           @include respond("desktop") {
             width: 400px;
             left: -2rem;
@@ -65,6 +70,11 @@ section.services {
           left: 1rem;
           top: 10rem;
           // margin-top: 15%;
+          @include respond("tab-port") {
+            width: 300px;
+            left: 1rem;
+            top: 10rem;
+          }
           @include respond("desktop") {
             width: 400px;
             left: 0;
@@ -73,7 +83,7 @@ section.services {
           @include respond("big-desktop") {
             width: 500px;
             left: -3rem;
-            top: 7rem;
+            top: 10rem;
           }
         }
       }
@@ -161,7 +171,7 @@ section.services {
       margin-top: 0;
     }
     margin-top: 2rem;
-    @include respond("tab-port") {
+    @include respond("phone") {
       margin-top: 0;
     }
   }
@@ -208,7 +218,7 @@ section.services {
 .services--quote {
   margin-bottom: 2rem;
   @include respond("big-desktop") {
-    margin-top: -30rem;
+    margin-top: -20rem;
   }
   .card {
     background: #ffffff;
