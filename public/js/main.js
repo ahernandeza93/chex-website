@@ -1,4 +1,4 @@
-$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+$(document).on("click", '[data-toggle="lightbox"]', function (event) {
   event.preventDefault();
   $(this).ekkoLightbox();
 });
@@ -36,7 +36,7 @@ var timeline3 = new TimelineMax()
     duration: 1,
     delay: 2.5,
     x: -30,
-    opacity: 0
+    opacity: 0,
   })
 
   .from(".fade-down", { opacity: 0, duration: 1, y: -50 });
@@ -71,26 +71,22 @@ if ($(window).width() >= 1024) {
   const scene2 = new ScrollMagic.Scene({
     triggerElement: ".information",
     triggerHook: "onEnter",
-    duration: "90%"
+    duration: "90%",
   })
     .setTween(tl2)
     .addTo(controller);
-
   var tl3 = new TimelineMax();
-  tl3.from(".offers", 0.5, { y: 200, opacity: 0 });
-  const scene3 = new ScrollMagic.Scene({
-    triggerElement: ".offers",
-    triggerHook: "onEnter",
-    duration: "90%"
+  tl3.from(".work__logos", 0.5, { x: 50, opacity: 0 });
+  const scene4 = new ScrollMagic.Scene({
+    triggerElement: ".work",
   })
     .setTween(tl3)
     .addTo(controller);
-
   var tl4 = new TimelineMax();
-  tl4.from(".work__logos", 0.5, { x: 50, opacity: 0 });
-  const scene4 = new ScrollMagic.Scene({
-    triggerElement: ".work",
-   
+  tl4.from(".offers__container", 0.9, { y: 200, opacity: 0 });
+  const scene3 = new ScrollMagic.Scene({
+    triggerElement: ".offers",
+    triggerHook: "onEnter",
   })
     .setTween(tl4)
     .addTo(controller);

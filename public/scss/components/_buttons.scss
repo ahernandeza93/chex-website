@@ -1,0 +1,42 @@
+.btn {
+  display: inline-block;
+  &--dark-red {
+    background-color: $dark-red;
+    border-radius: 0;
+    color: #fff;
+    font-family: $main-font;
+    letter-spacing: 1.2px;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    width: 60%;
+    @include respond("tab-port") {
+      padding: 1rem 2.5rem;
+      max-width: 250px;
+    }
+    &:hover {
+      background-color: darken($dark-red, 4%);
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  &--white {
+    background-color: #fff;
+    border-radius: 0;
+    color: #0f263a;
+    font-family: $secondary-font;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 0.7rem 2rem;
+    display: inline-block;
+    margin-top: 2rem;
+    transition: all 0.3s;
+    &:hover {
+      color: #0f263a;
+      transform: translateY(-10px);
+      font-weight: bold;
+    }
+    // @include respond("desktop") {
+    // }
+  }
+}

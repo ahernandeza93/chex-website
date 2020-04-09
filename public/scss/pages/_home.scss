@@ -1,0 +1,266 @@
+section.services {
+  position: relative;
+
+  background: $light-gray;
+
+  @include respond("desktop") {
+    background: none;
+    height: 63vh;
+  }
+  @include respond("big-desktop") {
+    background: none;
+    height: 90vh;
+  }
+  &::after {
+    background: $light-gray;
+    content: "";
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    height: 63%;
+    z-index: -1;
+
+    @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+      height: 50vh;
+    }
+    @include respond("desktop") {
+      height: 60vh;
+    }
+    @include respond("big-desktop") {
+      height: 55vh;
+    }
+  }
+  .services__container {
+    @include respond("desktop") {
+      position: absolute;
+      top: 5rem;
+      left: 2rem;
+    }
+    @include respond("big-desktop") {
+      top: 6rem;
+    }
+  }
+  .services__img-container {
+    img {
+      width: 400px;
+      margin: 1rem auto;
+    }
+    @include respond("tab-port") {
+      img {
+        position: absolute;
+        &:nth-of-type(1) {
+          width: 300px;
+          left: -1rem;
+          top: 7%;
+          @include respond("tab-port") {
+            width: 300px;
+            left: -1rem;
+            top: 7%;
+          }
+          @include respond("desktop") {
+            width: 400px;
+            left: -2rem;
+            top: 7%;
+          }
+          @include respond("big-desktop") {
+            width: 500px;
+            left: -7rem;
+            top: 7%;
+          }
+        }
+        &:nth-of-type(2) {
+          width: 400px;
+          left: 1rem;
+          top: 10rem;
+          // margin-top: 15%;
+          @include respond("tab-port") {
+            width: 300px;
+            left: 1rem;
+            top: 10rem;
+          }
+          @include respond("desktop") {
+            width: 400px;
+            left: 0;
+            top: 7rem;
+          }
+          @include respond("big-desktop") {
+            width: 500px;
+            left: -3rem;
+            top: 10rem;
+          }
+        }
+      }
+    }
+  }
+  .card {
+    border: none;
+    background: $light-gray;
+    // &-body {
+    // }
+    &-img-top {
+      align-self: center;
+      width: 61px;
+      height: 61px;
+    }
+    &-title {
+      font-family: $main-font;
+      font-size: 1.1rem;
+    }
+    &-text {
+      font-size: 0.9rem;
+      color: $dark-gray;
+    }
+  }
+}
+#blog {
+  margin: 2rem 0;
+  a {
+    @include respond("desktop") {
+      margin-left: 2rem;
+    }
+  }
+}
+#information {
+  background-image: url("../img/bg-why.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  @include respond("big-desktop") {
+    height: 700px;
+  }
+  p {
+    padding: 3rem 0;
+    margin: 0;
+    @include respond("desktop") {
+      padding: 4rem 0;
+    }
+  }
+  h2 {
+    font-size: 2rem;
+    font-family: $main-font;
+    @include respond("big-desktop") {
+      font-size: 3.5rem;
+    }
+  }
+
+  .red-line {
+    height: 7px;
+    background-color: #d5001c;
+    width: 200px;
+    @include respond("big-desktop") {
+      width: 340px;
+    }
+  }
+
+  p {
+    color: #747f8d;
+    font-size: 1.1rem;
+  }
+
+  ul {
+    li {
+      list-style: none;
+      color: #0f263a;
+      font-weight: bold;
+      list-style-image: url("../img/check.svg");
+    }
+  }
+}
+.book {
+  background-color: #f8f8f9;
+  padding: 2rem 0;
+  .col-md-4 {
+    &:first-child {
+      margin-top: 0;
+    }
+    margin-top: 2rem;
+    @include respond("phone") {
+      margin-top: 0;
+    }
+  }
+  @include respond("big-desktop") {
+    padding: 3rem 0;
+    height: 120px;
+  }
+  h3,
+  h5 {
+    font-family: $main-font;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  .italic {
+    font-style: italic;
+  }
+  h5 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    font-family: $main-font;
+    font-weight: bold;
+  }
+}
+
+.work {
+  h2 {
+    font-size: 32px;
+    color: #0f263a;
+    font-family: $main-font;
+  }
+  p {
+    color: #747f8d;
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+  }
+}
+.services--quote {
+  margin-bottom: 2rem;
+  @include respond("big-desktop") {
+    margin-top: -20rem;
+  }
+  .card {
+    background: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.09);
+    border: none;
+    max-height: 190px;
+    img {
+      width: 20%;
+    }
+    &-body {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-title {
+      font-family: $main-font;
+    }
+    &-text {
+      color: $dark-gray;
+    }
+  }
+}
+.offers {
+  margin: 3rem 0;
+  height: 100px;
+  img {
+    margin-top: 1rem;
+    @include respond("desktop") {
+      margin-top: 0;
+    }
+  }
+  h1 {
+    font-family: $main-font;
+    font-style: italic;
+    margin-bottom: 2rem;
+    span {
+      font-weight: bold;
+    }
+  }
+}

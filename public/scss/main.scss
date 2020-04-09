@@ -1,0 +1,15 @@
+@import './abstracts/variables';
+@import './abstracts/animations';
+@import './abstracts/mixins';
+@import './pages/home';
+@import './components/top-header';
+@import './components/navbar';
+@import './components/jumbotron';
+@import './components/footer';
+@import './components/buttons';
+@import './components/card';
+
+body{
+  font-family: $secondary-font;
+  margin: 0;
+}
