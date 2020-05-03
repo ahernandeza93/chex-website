@@ -34,7 +34,7 @@ $(document).on("click", '[data-toggle="lightbox"]', function (event) {
 var timeline3 = new TimelineMax()
   .from("aside", {
     duration: 1,
-    delay: 2.5,
+    delay: 1,
     x: -30,
     opacity: 0,
   })

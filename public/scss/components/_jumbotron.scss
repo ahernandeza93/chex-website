@@ -5,6 +5,13 @@
     margin-bottom: 5rem;
   }
   &__content {
+    h1 {
+      font-family: $main-font;
+      font-size: 2rem;
+      @include respond("desktop") {
+        font-size: 3.4rem;
+      }
+    }
     @include respond("desktop") {
       padding-right: 2rem;
     }
